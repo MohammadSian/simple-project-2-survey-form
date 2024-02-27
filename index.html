@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: antiquewhite;
+        }
+        h1{
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            padding: 2%;
+            
+        }
+        .container{
+            align-items: center;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            font-size: larger;
+        }
+        form{
+            background-color: aliceblue;
+            padding: 40px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 500;
+            box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+        }
+        label{
+            display: inline-block;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+        
+        .box{
+            
+            padding: 10px;
+            width: 95%;
+            border-radius: 10px;
+        }
+        select{
+            width: 100%;
+            padding: 10px;
+            background-color: white;
+            border-radius: 10px;
+        }
+        textarea{
+            width: 100%;
+            padding: 5px;
+            height: 80px;
+            border-radius: 5px;
+            border-color: bisque;
+        }
+        .btn{
+            display: flex;
+            justify-content: space-between;
+        }
+        button{
+            width: 50%;
+            padding: 5px;
+            margin-top: 20px;
+            border-radius: 5px;
+            background-color:#219ebc ;
+        }
+        button:hover{
+            background-color: #8ecae6;
+            padding:8px ;
+            transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.2s;
+        }
+        h4{
+            text-align: center;
+        }
+        h4 a{
+            text-decoration: none;
+            color: black;
+            font-family: sans-serif;
+            font-weight: 500;
+        }
+        h4 a:hover{
+            color:#219ebc ;
+            transition: 0.1s;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Fill This Form to Connect With Us</h1>
+    <div class="container">
+        <form id="form">
+            <label for="name" class="label">First Name</label><br>
+            <input  type="text" class="box" placeholder="Enter your first name" id="fname"> <br>
+            <label for="name" class="label">Last Name</label><br>
+            <input type="text" class="box" placeholder="Enter your last name" id="lname"> <br>
+            <label for="email" class="label" >Email</label><br>
+            <input type="email" class="box" placeholder="Enter your email" id="email"> <br>
+            <label for="age" class="label" >Age</label><br>
+            <input type="number" class="box" placeholder="Enter your age" id="age"> <br>
+            <label for="role" id="role" class="label" >Your current position</label><br>
+            <select name="role" id="role">
+                <option value="student">Student</option>
+                <option value="intern">Intern</option>
+                <option value="professional">Professional</option>
+                <option value="others">Others</option> 
+            </select><br>
+            <label for="recommend" class="label" >Would you recommend us to your friends </label> <br>
+            <input type="radio" name="select" id="recommend-1"> Yes <br>
+            <input type="radio" name="select" id="recommend-2"> No <br>
+            <input type="radio" name="select" id="recommend-3"> Maybe <br>
+            <label for="skills" class="label" >Language and Frameworks known <small>[check all that want to apply]</small></label><br>
+            <input type="checkbox" name="l-1"> C <br>
+            <input type="checkbox" name="l-2"> C++ <br>
+            <input type="checkbox" name="l-3"> Python <br>
+            <input type="checkbox" name="l-4"> Java <br>
+            <input type="checkbox" name="l-5"> JavaScript <br>
+            <input type="checkbox" name="lf-6"> Django <br>
+            <input type="checkbox" name="lf-7"> Anguler Js  <br>
+            <input type="checkbox" name="lf-8"> Express Js <br>
+            <input type="checkbox" name="l-9"> PHP <br>
+            <input type="checkbox" name="lf-10"> Laravel <br>
+            <input type="checkbox" name="lf-11"> React Js <br>
+            <label for="comments" class="label">Comment Here</label> <br>
+            <textarea name="comment" placeholder="Feel free to comment here" id="comments" ></textarea> <br>
+            <div class="btn">
+                <button type="submit" value="submit">Submit</button>
+            <button type="reset" value="reset">Reset</button>
+            </div>
+            
+            
+        </form>
+    </div>
+    <footer>
+        <h4>Developed by <a href="#">Sian Rahman</a></h4>
+    </footer>
+</body>
+</html>
